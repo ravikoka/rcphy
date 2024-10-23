@@ -1,0 +1,7 @@
+typically dont want to call determinant in code. determinant is product of eigenvalues. 
+
+if one is zero, numerically might be small like 1e-12. But if large matrix, with some large eigenvalues, could easily calculate a determinant of 1000, when it shouldve been 0. 
+
+So instead get eigenvalues, check if any below some threshold. 
+
+For similar reasons, dont take log of determinant or log of product of eigenvals. Find eigenvals and take sum of logs.
